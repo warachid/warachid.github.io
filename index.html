@@ -4,20 +4,56 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tanout Dev</title>
-<style>body{font-family:Arial,sans-serif;max-width:640px;margin:40px auto;padding:0 16px;color:#222;line-height:1.5}h1{margin-bottom:4px}a{color:#0b6b3a}.app{border:1px solid #ddd;border-radius:10px;padding:14px 16px;margin:14px 0}</style>
+<meta name="description" content="Android apps made in Tanout, Morocco: My Pharmacy and Finek.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='6' fill='%230e8f5f'/><path fill='white' d='M9 5h6v4h4v6h-4v4H9v-4H5V9h4z'/></svg>">
+<style>
+:root{--bg:#f3f8f5;--card:#ffffff;--text:#14261f;--muted:#5b6b64;--brand:#0e8f5f;--border:#e0ebe5;--shadow:0 12px 32px rgba(10,60,45,.12)}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1411;--card:#13211c;--text:#e8f2ed;--muted:#9bb0a7;--brand:#22c483;--border:#213229;--shadow:0 12px 32px rgba(0,0,0,.4)}}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+.hero{background:linear-gradient(135deg,#0e8f5f 0%,#0a6b70 60%,#0b4f6c 100%);color:#fff;padding:68px 20px 104px;text-align:center}
+.badge{display:inline-block;background:rgba(255,255,255,.16);padding:6px 16px;border-radius:999px;font-size:.85rem;letter-spacing:.04em;margin-bottom:20px}
+.hero h1{margin:0 0 12px;font-size:clamp(2.2rem,7vw,3.4rem);letter-spacing:-.02em;line-height:1.1}
+.hero p{margin:0 auto;max-width:520px;opacity:.93;font-size:1.1rem}
+main{max-width:880px;margin:-60px auto 0;padding:0 20px 24px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:28px;box-shadow:var(--shadow)}
+.icon{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;margin-bottom:18px}
+.icon svg{width:30px;height:30px}
+.i1{background:linear-gradient(135deg,#12b57a,#0e8f5f)}
+.i2{background:linear-gradient(135deg,#3b82f6,#6366f1)}
+.card h2{margin:0 0 8px;font-size:1.35rem}
+.card p{margin:0 0 22px;color:var(--muted)}
+.btn{display:inline-block;padding:12px 22px;border-radius:12px;font-weight:600;text-decoration:none;background:var(--brand);color:#fff;transition:transform .15s,filter .15s}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn.alt{background:transparent;color:var(--brand);border:1.5px solid var(--brand)}
+.about{text-align:center;color:var(--muted);max-width:560px;margin:44px auto 0}
+footer{text-align:center;color:var(--muted);font-size:.9rem;padding:28px 20px 44px}
+</style>
 </head>
 <body>
+<header class="hero">
+<span class="badge">Made in Tanout, Morocco</span>
 <h1>Tanout Dev</h1>
-<p>Android apps made in Tanout, Morocco.</p>
-<div class="app">
+<p>Simple, useful Android apps for everyday life.</p>
+</header>
+<main>
+<div class="grid">
+<section class="card">
+<div class="icon i1"><svg viewBox="0 0 24 24" fill="#fff"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg></div>
 <h2>My Pharmacy</h2>
-<p>Find the on-duty (guard) pharmacy near you.</p>
-<p><a href="https://play.google.com/store/apps/details?id=com.rachi.mypharmacy">Get it on Google Play</a></p>
-</div>
-<div class="app">
+<p>Find the on-duty (guard) pharmacy near you, quickly and easily.</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.rachi.mypharmacy">Get it on Google Play</a>
+</section>
+<section class="card">
+<div class="icon i2"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></div>
 <h2>Finek</h2>
-<p>Social location-sharing app.</p>
-<p><a href="https://warachid.github.io/finek-privacy/">Privacy policy</a></p>
+<p>A social location-sharing app to stay connected with the people you choose.</p>
+<a class="btn alt" href="https://warachid.github.io/finek-privacy/">Privacy policy</a>
+</section>
 </div>
+<p class="about">Built by an independent developer from Tanout. More apps coming soon.</p>
+</main>
+<footer>&copy; 2026 Tanout Dev</footer>
 </body>
 </html>

@@ -24,6 +24,15 @@ main{max-width:880px;margin:-60px auto 0;padding:0 20px 24px}
 .btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
 .btn.alt{background:transparent;color:var(--brand);border:1.5px solid var(--brand)}
 .about{text-align:center;color:var(--muted);max-width:560px;margin:44px auto 0}
+.pp{display:block;margin-top:14px;font-size:.9rem;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.pp:hover{color:var(--brand)}
+.contact{text-align:center;margin:48px auto 0;max-width:560px}
+.contact h2{margin:0 0 6px;font-size:1.35rem}
+.contact p{margin:0 0 18px;color:var(--muted)}
+.social{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.social a{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text);text-decoration:none;font-weight:600;transition:border-color .15s,color .15s}
+.social a:hover{border-color:var(--brand);color:var(--brand)}
+.social svg{width:20px;height:20px}
 footer{text-align:center;color:var(--muted);font-size:.9rem;padding:28px 20px 44px}
 </style>
 </head>
@@ -39,15 +48,26 @@ footer{text-align:center;color:var(--muted);font-size:.9rem;padding:28px 20px 44
 <h2>My Pharmacy</h2>
 <p>Find the on-duty (guard) pharmacy near you, in Imintanout, quickly and easily.</p>
 <a class="btn" href="https://play.google.com/store/apps/details?id=com.rachi.mypharmacy">Get it on Google Play</a>
+<a class="pp" href="https://docs.google.com/document/d/e/2PACX-1vSPJauetcL6R6Xn-Sa9vAD5vCeirzdrYB9AIS-eqdO2FXjFRdXrgrOEtwSEBs4NjjurWW8tMbRwpIli/pub" target="_blank" rel="noopener">Privacy policy</a>
 </section>
 <section class="card">
 <img class="icon" src="data:image/webp;base64,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" alt="Finek app icon" width="72" height="72">
 <h2>Finek</h2>
 <p>A social location-sharing app to stay connected with the people you choose.</p>
 <a class="btn" href="https://play.google.com/store/apps/details?id=com.rachidab.finek">Get it on Google Play</a>
+<a class="pp" href="https://warachid.github.io/finek-privacy/">Privacy policy</a>
 </section>
 </div>
 <p class="about">Built by an independent developer. More apps coming soon.</p>
+<section class="contact">
+<h2>Contact</h2>
+<p>Questions, feedback or ideas? Reach out.</p>
+<div class="social">
+<a href="https://www.facebook.com/TanoutDEV" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v7h4v-7H16l.5-4h-3V8.9c0-.6.3-.9.5-.9z"/></svg>Facebook</a>
+<a href="https://www.instagram.com/rachid.x_x" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>Instagram</a>
+<a href="mailto:rachid.aitbaih95@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 6.5 12 13l8.5-6.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>Email</a>
+</div>
+</section>
 </main>
 <footer>&copy; 2026 Tanout Dev</footer>
 </body>
